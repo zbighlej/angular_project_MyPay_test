@@ -1,0 +1,67 @@
+
+  <h1>
+    Bills
+  </h1>
+
+
+
+<div class="content-wrapp">
+  <form  [formGroup]="form" (ngSubmit)="onSubmit()">
+
+    <div class="col-md-6 selects">
+
+  <select  name="month" id="month" formControlName="month" style="background-color:#b8defa; border-radius: 10px; margin-bottom: 30px;">
+    <option value="month" selected disabled hidden>Month</option>
+    <option value="jan">january</option>
+    <option value="feb">february</option>
+    <option value="mar">march</option>
+    <option value="apr">april</option>
+    <option value="may">may</option>
+    <option value="jun">jun</option>
+    <option value="jul">july</option>
+    <option value="aug">august</option>
+    <option value="sep">september</option>
+    <option value="oct">october</option>
+    <option value="nov">november</option>
+    <option value="dec">december</option>
+  </select>
+
+  </div>
+
+<div class="col-md-6 selects">
+  <select name="year" id="year"  formControlName="year"  style="background-color:#b8defa; border-radius: 10px">
+    <option value="2017">2017</option>
+    <option value="2018">2018</option>
+    <option value="2019">2019</option>
+  </select>
+</div>
+
+
+
+
+  <div class="res col-md-6">
+    <button type="submit" class ="btn resbtn" id="resbtnfirst">Result</button>
+    <button type = "button" class="btn resbtn" id="resbtnsecond" (click)="onReset()">Reset</button>
+  </div>
+
+
+
+    <div class="col-md-6 result">
+      <p>Whater: <span>{{whater}}</span>per m.</p>
+      <p>Gass: <span>{{gass}}</span>per m.</p>
+      <p>Electricity: <span> {{electricity}}</span>per m.</p>
+    </div>
+  </form>
+
+
+  <div class="summ-wrapp col-md-6">
+    <button type="button" class = "buttonsum" (click)="onSum()">sum</button>
+    <p class="summitem">{{sum}}</p>
+  </div>
+
+
+
+</div>
+
+
+

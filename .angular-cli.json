@@ -19,7 +19,8 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "pay",
       "styles": [
-        "styles.scss"
+        "styles.scss",
+        "./assets/theme.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",

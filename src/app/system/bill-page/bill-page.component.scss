@@ -1,0 +1,121 @@
+
+.selects{
+  display: block;
+  margin: 0 auto;
+  & select{
+    width: 100%;
+    outline: none;
+    height: 40px;
+  }
+}
+.res{
+  margin: 0 auto;
+  margin-top: 30px;
+  display: block;
+  width: 100%;
+  margin-bottom: 70px;
+  position: relative;
+}
+.resbtn {
+  display: inline-block;
+  background-color: #b8defa;
+  outline: none;
+  border: none;
+  &:last-child{
+    float: right;
+  }
+}
+#resbtnfirst{
+  transition: 0.7s ease;
+  position: absolute;
+  top: 0;
+  left: 60px;
+}
+
+#resbtnsecond{
+  transition: 0.7s ease;
+  position: absolute;
+  top: 0;
+  right: 60px;
+}
+
+#resbtnfirst:hover{
+  opacity: 0.7;
+  background-color: #166ae9 +#fff 10%;
+  border: 3px solid transparent;
+  border-radius: 15px;
+  overflow: hidden;
+  letter-spacing: 3px;
+  left:50px;
+  filter: url(#wherearemyglasses);
+}
+
+#resbtnsecond:hover{
+  opacity: 0.7;
+  background-color: #166ae9 +#fff 10%;
+  border: 3px solid transparent;
+  border-radius: 15px;
+  overflow: hidden;
+  letter-spacing: 3px;
+  right: 50px;
+  filter: url(#wherearemyglasses);
+}
+
+.result{
+  display: block;
+  margin: 0 auto;
+  height: 140px;
+  background-color: #fff;
+  border-radius: 10px;
+  & p{
+    padding: 5px;
+    overflow: hidden;
+  }
+  & span{
+    display: block;
+    float: right;
+  }
+}
+.summ-wrapp {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+}
+
+.buttonsum{
+  cursor: pointer;
+  padding: 20px;
+  background-color: #b8defa;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  transition: 0.7s ease;
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  &:hover{
+    opacity: 0.7;
+    background-color: #166ae9 +#fff 10%;
+    border: 3px solid transparent;
+    border-radius: 15px;
+    overflow: hidden;
+    letter-spacing: 3px;
+    left: 45px;
+    filter: url(#wherearemyglasses);
+  }
+}
+
+.summitem{
+  display: block;
+  float: right;
+  width: 60px;
+  height: 60px;
+  border-radius: 25px;
+  margin-top: 20px;
+  background-color: #b8defa;
+  color: white;
+  font-size: 120%;
+  text-align: center;
+  padding-top: 15px;
+}

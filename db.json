@@ -1,0 +1,70 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "mail": "wfm@mail.ru",
+      "pass": "12345678",
+      "name": "Admin"
+    },
+    {
+      "mail": "mikeyork32@gmail.com",
+      "pass": "12345678",
+      "id": 2,
+      "name": "Mike"
+    }
+  ],
+  "jan2017": {
+    "whater": 2,
+    "gass": 2,
+    "electricity": 2,
+    "year": "2017",
+    "month": "jan"
+  },
+  "jan2018": {
+    "month": "jan",
+    "year": "2018",
+    "whater": 2,
+    "gass": 2,
+    "electricity": 2
+  },
+  "jan2019": {
+    "whater": 1,
+    "gass": 1,
+    "electricity": 1,
+    "year": "2019",
+    "month": "jan"
+  },
+  "feb2017": {},
+  "feb2018": {},
+  "feb2019": {},
+  "mar2017": {},
+  "mar2018": {},
+  "mar2019": {},
+  "apr2017": {},
+  "apr2018": {},
+  "apr2019": {},
+  "may2017": {},
+  "may2018": {},
+  "may2019": {},
+  "jun2017": {},
+  "jun2018": {},
+  "jun2019": {},
+  "jul2017": {},
+  "jul2018": {},
+  "jul2019": {},
+  "aug2017": {},
+  "aug2018": {},
+  "aug2019": {},
+  "sep2017": {},
+  "sep2018": {},
+  "sep2019": {},
+  "oct2017": {},
+  "oct2018": {},
+  "oct2019": {},
+  "nov2017": {},
+  "nov2018": {},
+  "nov2019": {},
+  "dec2017": {},
+  "dec2018": {},
+  "dec2019": {}
+}

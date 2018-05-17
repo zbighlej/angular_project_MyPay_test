@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+  <title>system</title>
+</head>
+<body>
+
+<header>
+
+ <div class="header-wrapp-content">
+   <a href="#">MyPay</a>
+   <p>Welcome, <span style="text-decoration:underline;" >{{user.name}}</span></p>
+ </div>
+</header>
+<div class="content-wrapp">
+<aside>
+  <div class="sidebar-wrapp">
+    <ul>
+      <li><a [routerLink] = "'/system/bill'">Bill</a></li>
+      <li><a [routerLink] = "'/system/history'">History</a></li>
+      <li><a [routerLink] = "'/system/record'" style="margin-bottom: 0">Record</a></li>
+    </ul>
+  </div>
+</aside>
+
+<main>
+  <div class="sidebar-wrapp small">
+    <ul>
+      <li><a [routerLink] = "'/system/bill'">Bill</a></li>
+      <li><a [routerLink] = "'/system/history'">History</a></li>
+      <li><a [routerLink] = "'/system/record'" style="margin-bottom: 0">Record</a></li>
+    </ul>
+  </div>
+
+  <router-outlet></router-outlet>
+</main>
+
+</div>
+
+
+<svg height="0">
+  <defs>
+    <filter id="wherearemyglasses" x="0" y="0">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1"/>
+    </filter>
+  </defs>
+</svg>
+</body>
+</html>
+
+
+
+

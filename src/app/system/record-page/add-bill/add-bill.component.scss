@@ -1,0 +1,57 @@
+.record-form-first{
+  margin-bottom: 60px;
+}
+.whaterbills{
+  margin: 0 auto;
+  width: 100%;
+  & input{
+    text-align: center;
+    border-radius: 10px;
+  }
+}
+.bill-items{
+  display: block;
+  margin: 0 auto;
+
+}
+.selects{
+  display: block;
+  margin: 0 auto;
+  & select{
+    width: 100%;
+    outline: none;
+  }
+}
+
+.res{
+  padding-top: 30px;
+  display: block;
+  width: 20%;
+  margin: 0 auto;
+  position: relative;
+
+}
+#res {
+  background-color: #b8defa;
+  outline: none;
+  border: none;
+  display:block;
+  margin: 0 auto;
+  transition: 0.7s ease;
+  position: absolute;
+  top: 10px;
+  left: 60px;
+}
+
+#res:hover {
+  opacity: 0.7;
+  background-color: #166ae9 +#fff 10%;
+  border: 5px solid transparent;
+  border-radius: 15px;
+  overflow: hidden;
+  letter-spacing: 3px;
+  left: 50px;
+  filter: url(#wherearemyglasses);
+}
+
+

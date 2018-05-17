@@ -1,0 +1,87 @@
+<form class="record-form record-form-first" #f="ngForm" (ngSubmit)="onSubmit(f)">
+
+  <div class="whaterbills">
+    <div class="row">
+    <div class="bill-items"><label for="waterbill">Whater:
+      <input
+        type="number"
+        id="waterbill"
+        required
+        #whater ="ngModel"
+        name = "whater"
+        min ="1"
+        [ngModel] = "0"
+      >
+      <span *ngIf="whater.invalid && whater.touched"
+            [ngClass] ="{'has-error':whater.invalid && whater.touched }">empty!</span>
+    </label>
+
+    <label for="gassbill">Gass:
+      <input
+        type="number"
+        id ="gassbill"
+        [ngModel]= "0"
+        min = "1"
+        name="gass"
+        #gass = "ngModel"
+        required
+
+      >
+      <span *ngIf="gass.invalid && gass.touched"
+            [ngClass] ="{'has-error':gass.invalid && gass.touched }">empty!</span>
+    </label>
+  <label for="electricitybill">Electricity:
+      <input
+        type="number"
+        id="electricitybill"
+        [ngModel] = "0"
+        min = "1"
+        name = "electricity"
+        #electricity = "ngModel"
+        required
+      >
+      <span *ngIf="electricity.invalid && electricity.touched"
+            [ngClass] ="{'has-error':electricity.invalid && electricity.touched }">empty!</span>
+  </label></div></div>
+  </div>
+
+  <div class="col-md-6 selects">
+    <select
+      ngModel
+      #month ="ngModel"
+      name="month"
+      id="month"
+      style="background-color:#b8defa; margin-bottom: 30px; border-radius: 10px; height: 40px;" >
+      <option value="month" selected disabled hidden>Month</option>
+      <option value="jan">january</option>
+      <option value="feb">february</option>
+      <option value="mar">march</option>
+      <option value="apr">april</option>
+      <option value="may">may</option>
+      <option value="jun">jun</option>
+      <option value="jul">july</option>
+      <option value="aug">august</option>
+      <option value="sep">september</option>
+      <option value="oct">october</option>
+      <option value="nov">november</option>
+      <option value="dec">december</option>
+    </select>
+
+    <select
+      id="year"
+      ngModel
+      name="year"
+      #year ="ngModel"
+      style="background-color:#b8defa; width: 100%; border-radius: 10px;  height: 40px;">
+
+      <option value="2017">2017</option>
+      <option value="2018">2018</option>
+      <option value="2019">2019</option>
+    </select>
+  </div>
+
+  <div class="res">
+    <button type="submit" class ="btn btn-success" id="res">Add/Record</button>
+  </div>
+
+</form>

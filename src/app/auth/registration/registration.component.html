@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>registration</title>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link  href="registration.component.scss">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+</head>
+<body>
+
+<div class="reg-wrapp login-wrapp">
+  <h1>My Pay</h1>
+  <hr>
+  <p>зарегистрироватся в системе</p>
+
+
+  <form action="post"
+        class="logform regform"
+        [formGroup] = "form"
+        (ngSubmit)="onSubmit()"
+  >
+
+    <label for="mail">Введите эмеил<input
+      type="text"
+      id="mail"
+      placeholder="email"
+      formControlName = "mail"
+    >
+
+      <span
+        *ngIf="form.get('mail').invalid && form.get('mail').touched"
+        [ngClass] ="{'has-error' : form.get('mail').invalid && form.get('mail').touched}"
+      >
+
+      <span *ngIf="form.get('mail')['errors']['required']"> Email не может быть пустым!</span>
+      <span *ngIf="form.get('mail')['errors']['email']"> Введите корректный email!</span>
+      <span *ngIf="form.get('mail')['errors']['forbiddenEmail']">Этот email занят!</span>
+
+    </span>
+    </label>
+    <label for="pass">Введите пароль<input
+      type="text"
+      id="pass"
+      placeholder="password"
+      formControlName = "pass"
+
+    >
+
+      <span
+        *ngIf="form.get('pass').invalid && form.get('pass').touched"
+        [ngClass] ="{'has-error' : form.get('pass').invalid && form.get('pass').touched}"
+      >
+
+        <span *ngIf="form.get('pass')['errors']['required']"> Пароль не может быть пустым!</span>
+        <span *ngIf="form.get('pass')['errors']['minlength']">
+            Пароль должен быть больше {{form.get('pass')['errors']['minlength']['requiredLength']}}
+            Сейчас введено  {{form.get('pass')['errors']['minlength']['actualLength']}}
+        </span>
+
+      </span>
+    </label>
+
+
+    <label for="mail">Введите имя<input
+      type="text"
+      id="name"
+      placeholder="name"
+      formControlName = "name"
+    >
+
+      <span
+        *ngIf="form.get('name').invalid && form.get('name').touched"
+        [ngClass] ="{'has-error' : form.get('name').invalid && form.get('name').touched}"
+      >
+
+      <span *ngIf="form.get('name')['errors']['required']"> Имя не может быть пустым!</span>
+
+    </span>
+    </label>
+
+
+    <button type="submit"
+            class="btn btn-submit buttonsub"
+            [disabled] = "form.invalid"
+    >Регистрация</button>
+  </form>
+
+
+  <p>Уже есть аккаунт?</p> <a [routerLink] = "'/login'">Войти</a>
+
+</div>
+
+</body>
+</html>
