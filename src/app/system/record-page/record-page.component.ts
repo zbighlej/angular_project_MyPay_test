@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {BillService} from "../../shared/services/bill.service";
-import {BillGet} from "../../shared/models/billget.model";
+
 
 @Component({
   selector: 'pay-record-page',
