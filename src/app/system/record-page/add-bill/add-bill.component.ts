@@ -13,8 +13,10 @@ import {BillService} from "../../../shared/services/bill.service";
 export class AddBillComponent implements OnInit {
 
 
+
   constructor(private billService: BillService) { }
   ngOnInit() {
+
   }
 
   onSubmit(form: NgForm){

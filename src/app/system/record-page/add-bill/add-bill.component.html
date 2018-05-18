@@ -14,8 +14,8 @@
       >
       <span *ngIf="whater.invalid && whater.touched"
             [ngClass] ="{'has-error':whater.invalid && whater.touched }">empty!</span>
-    </label>
-
+    </label></div>
+      <div class="bill-items">
     <label for="gassbill">Gass:
       <input
         type="number"
@@ -29,7 +29,8 @@
       >
       <span *ngIf="gass.invalid && gass.touched"
             [ngClass] ="{'has-error':gass.invalid && gass.touched }">empty!</span>
-    </label>
+    </label></div>
+      <div class="bill-items">
   <label for="electricitybill">Electricity:
       <input
         type="number"
@@ -80,8 +81,9 @@
     </select>
   </div>
 
+  <div class="bill-items">
   <div class="res">
     <button type="submit" class ="btn btn-success" id="res">Add/Record</button>
-  </div>
+  </div></div>
 
 </form>

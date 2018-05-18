@@ -19,14 +19,20 @@ header{
   margin-top: 20px;
   & a {
     color: #166ae9;
-    display: inline-block;
+    display: block;
     margin: 7px 0 0 20px;
+    position: absolute;
+    left: 10px;
   }
   & p{
     display: inline-block;
     float: right;
     margin: 7px 20px 0 0;
   }
+}
+
+.header-wrapp-content{
+  position: relative;
 }
 
 .header-wrapp-content > a:hover{
@@ -36,11 +42,21 @@ header{
   opacity: 0.8;
 }
 
+
 .content-wrapp {
   display: block;
   width: 90%;
   margin: 0 auto;
   margin-top: 30px;
+}
+
+.logout-header{
+  position: absolute;
+  left: 80px!important;
+  display: block;
+  letter-spacing: 5px;
+  font-weight:bold;
+  cursor: pointer;
 }
 
 aside{
@@ -110,6 +126,16 @@ main{
     }
   }
 }
+
+//media queries 4 system component
+
+@media (max-width: 992px) {
+
+  aside {
+    background: none;
+  }
+}
+
 
 
 @media (max-width: 758px) {

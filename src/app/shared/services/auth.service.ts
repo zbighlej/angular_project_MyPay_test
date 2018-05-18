@@ -8,7 +8,7 @@ export class AuthService{
   }
 
   logout(){
-    this.isAuthenticated  =false;
+    this.isAuthenticated =false;
     window.localStorage.clear();
 
   }
