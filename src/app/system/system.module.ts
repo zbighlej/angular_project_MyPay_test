@@ -8,6 +8,7 @@ import {SystemComponent} from "./system.component";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {BillService} from "../shared/services/bill.service";
 import { AddBillComponent } from './record-page/add-bill/add-bill.component';
+import { BillMoneyComponent } from './bill-page/bill-money/bill-money.component';
 
 
 
@@ -21,7 +22,8 @@ import { AddBillComponent } from './record-page/add-bill/add-bill.component';
       HistoryPageComponent,
       RecordPageComponent,
       SystemComponent,
-      AddBillComponent
+      AddBillComponent,
+      BillMoneyComponent
     ],
   providers: [BillService]
 })

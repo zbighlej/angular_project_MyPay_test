@@ -1,5 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
-import {Year} from "../../../shared/models/year.model";
+import { Component, OnInit} from '@angular/core';
 import {NgForm} from "@angular/forms";
 import {BillSend} from "../../../shared/models/billsend.model";
 import {BillService} from "../../../shared/services/bill.service";

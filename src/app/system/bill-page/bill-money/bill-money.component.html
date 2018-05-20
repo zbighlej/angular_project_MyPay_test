@@ -1,0 +1,47 @@
+<div class="money-wrapp col-md-6">
+  <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+    <label for="whater-per-m-cost">
+      whater$*1
+      <input
+        type="number"
+        id="whater-per-m-cost"
+        style="text-align:center; border-radius: 10px; outline: none; border: none;"
+        required
+        #whater="ngModel"
+        name="whater"
+        min="1"
+        [ngModel]="0"
+      ></label>
+    <label for="gass-per-m-cost">
+      gass$*1
+      <input
+        type="number"
+        id="gass-per-m-cost"
+        style="text-align:center; border-radius: 10px; outline: none; border: none;"
+        [ngModel]= "0"
+        min = "1"
+        name="gass"
+        #gass = "ngModel"
+        required
+      ></label>
+    <label for="electricity-per-m-cost">
+      electricity$*1
+      <input
+        type="number"
+        id="electricity-per-m-cost"
+        style="text-align:center; border-radius: 10px; outline: none; border: none;"
+        [ngModel] = "0"
+        min = "1"
+        name = "electricity"
+        #electricity = "ngModel"
+        required
+      ></label>
+
+
+    <div class="res-money-wrapp">
+      <div class="money-result">{{this.moneyResult}}$</div>
+      <button type="submit" class="btn resbtn moneyres">PAY</button>
+    </div>
+
+  </form>
+</div>

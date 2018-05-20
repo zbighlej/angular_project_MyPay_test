@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Injectable, OnInit, Output} from '@angular/core';
 import {FormControl, FormGroup, NgForm, Validators} from "@angular/forms";
 import {BillService} from "../../shared/services/bill.service";
 import {Bill} from "../../shared/models/bill.model";
@@ -18,7 +18,6 @@ export class BillPageComponent implements OnInit {
   gass: number;
   electricity: number;
   sum: number;
-
 
   constructor(private billService: BillService) {
   }
