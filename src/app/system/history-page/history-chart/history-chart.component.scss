@@ -1,0 +1,49 @@
+.history-wrapp{
+  position: relative;
+}
+
+.chart-wrapp{
+  margin-top: -100px;
+}
+
+
+.selects{
+  display: block;
+  margin: 0 auto;
+
+  & select{
+    width: 100%;
+    outline: none;
+    height: 40px;
+  }
+}
+.res{
+  margin: 0 auto;
+  margin-top: 30px;
+  display: block;
+  width: 100%;
+  margin-bottom: 70px;
+  position: relative;
+}
+.resbtn {
+  display: inline-block;
+  background-color: #b8defa;
+  outline: none;
+  border: none;
+}
+#resbtnhistory{
+  transition: 0.7s ease;
+  position: absolute;
+  top: 0;
+  left: 160px;
+}
+#resbtnhistory:hover{
+  opacity: 0.7;
+  background-color: #166ae9 +#fff 10%;
+  border: 3px solid transparent;
+  border-radius: 15px;
+  overflow: hidden;
+  letter-spacing: 3px;
+  left: 155px;
+  filter: url(#wherearemyglasses);
+}

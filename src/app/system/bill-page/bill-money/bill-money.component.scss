@@ -47,3 +47,14 @@
     filter: url(#wherearemyglasses);
   }
 }
+
+
+@media (max-width: 758px) {
+  .money-wrapp form label {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  .money-wrapp form label input{
+    float: right;
+  }
+}

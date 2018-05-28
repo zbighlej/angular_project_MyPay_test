@@ -9,6 +9,9 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {BillService} from "../shared/services/bill.service";
 import { AddBillComponent } from './record-page/add-bill/add-bill.component';
 import { BillMoneyComponent } from './bill-page/bill-money/bill-money.component';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {NgxChartsModule} from "@swimlane/ngx-charts";
+import { HistoryChartComponent } from './history-page/history-chart/history-chart.component';
 
 
 
@@ -16,14 +19,17 @@ import { BillMoneyComponent } from './bill-page/bill-money/bill-money.component'
     imports: [CommonModule,
       SystemRoutingModule,
       ReactiveFormsModule,
-      FormsModule],
+      FormsModule,
+      BrowserAnimationsModule,
+      NgxChartsModule],
 
     declarations: [BillPageComponent,
       HistoryPageComponent,
       RecordPageComponent,
       SystemComponent,
       AddBillComponent,
-      BillMoneyComponent
+      BillMoneyComponent,
+      HistoryChartComponent
     ],
   providers: [BillService]
 })
