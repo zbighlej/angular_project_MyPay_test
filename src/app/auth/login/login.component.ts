@@ -27,9 +27,12 @@ export class LoginComponent implements OnInit {
 
     this.route.queryParams
       .subscribe((params: Params) => {
-          if(params['nowCanLogin'])
+          if(params['nowCanLogin']) {
             alert('Теперь вы можете войти!')
-      });
+          } else if (params['accessDenied']) {
+              alert('Для работы вам нужно залогинится!')
+          }
+          });
 
     //this.message  = new Message('danger', ''); для сообщ
     this.form = new FormGroup({
@@ -59,7 +62,7 @@ export class LoginComponent implements OnInit {
 
           this.authService.login();
           window.localStorage.setItem('user', JSON.stringify(user));
-          //this.router.navigate(['']); //редирект на страницу при авторизаци
+          this.router.navigate(['system/bill']); //редирект на страницу при авторизаци
 
 
 

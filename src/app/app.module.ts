@@ -8,6 +8,7 @@ import {UsersService} from "./shared/services/users.service";
 import {AuthService} from "./shared/services/auth.service";
 import {SystemModule} from "./system/system.module";
 import {BillService} from "./shared/services/bill.service";
+import {AuthGuard} from "./shared/services/auth.guard";
 
 
 
@@ -24,7 +25,7 @@ import {BillService} from "./shared/services/bill.service";
     AppRoutingModule,
     SystemModule
   ],
-  providers: [UsersService, AuthService, BillService],
+  providers: [UsersService, AuthService, BillService, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
