@@ -1,13 +1,20 @@
-// import {NgModule} from "@angular/compiler/src/core";
-// import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+// import {NgModule} from "@angular/core";
+// import {NotFoundComponent} from "./components/not-found/not-found.component";
 //
 // @NgModule({
+//   declarations: [
+//     NotFoundComponent
+//   ],
+//   imports: [
 //
-//   imports: [ReactiveFormsModule, FormsModule],
-//   exports: [ReactiveFormsModule, FormsModule]
+//   ],
+//   exports: [
+//     NotFoundComponent
+//   ],
+//
+//   providers: []
 //
 // })
-//
 // export class SharedModule{
 //
 // }
