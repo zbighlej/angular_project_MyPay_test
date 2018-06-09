@@ -9,6 +9,8 @@ import {AuthService} from "./shared/services/auth.service";
 import {SystemModule} from "./system/system.module";
 import {BillService} from "./shared/services/bill.service";
 import {AuthGuard} from "./shared/services/auth.guard";
+import {NotFoundComponent} from "./shared/components/not-found/not-found.component";
+
 
 
 
@@ -16,7 +18,8 @@ import {AuthGuard} from "./shared/services/auth.guard";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
