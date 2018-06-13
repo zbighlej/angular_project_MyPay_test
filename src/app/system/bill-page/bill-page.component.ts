@@ -1,15 +1,13 @@
-import {Component, Injectable, OnInit, Output} from '@angular/core';
+import {Component, OnInit, Output} from '@angular/core';
 import {FormControl, FormGroup, NgForm, Validators} from "@angular/forms";
 import {BillService} from "../../shared/services/bill.service";
 import {Bill} from "../../shared/models/bill.model";
 
-
-
-
 @Component({
   selector: 'pay-bill-page',
   templateUrl: './bill-page.component.html',
-  styleUrls: ['./bill-page.component.scss']
+  styleUrls: ['./bill-page.component.scss'],
+
 })
 export class BillPageComponent implements OnInit {
 

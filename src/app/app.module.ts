@@ -10,6 +10,7 @@ import {SystemModule} from "./system/system.module";
 import {BillService} from "./shared/services/bill.service";
 import {AuthGuard} from "./shared/services/auth.guard";
 import {NotFoundComponent} from "./shared/components/not-found/not-found.component";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 
 
@@ -26,7 +27,8 @@ import {NotFoundComponent} from "./shared/components/not-found/not-found.compone
     HttpModule,
     AuthModule,
     AppRoutingModule,
-    SystemModule
+    SystemModule,
+    BrowserAnimationsModule
   ],
   providers: [UsersService, AuthService, BillService, AuthGuard],
   bootstrap: [AppComponent]

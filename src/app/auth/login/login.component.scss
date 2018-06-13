@@ -1,6 +1,15 @@
+body{
+  background: rgb(174,220,238);
+  background: radial-gradient(circle, rgba(174,220,238,0.4654236694677871) 35%, rgba(108,159,182,0.00043767507002800965) 57%);
+  height: 600px;
+  overflow: auto;
+}
 
 .login-wrapp{
-  background-color: #fff;
+  background: rgb(174,220,238);
+  background: radial-gradient(circle, rgba(174,220,238,0.5354516806722689) 4%, rgba(127,205,218,0.19371498599439774) 81%);
+  border-radius: 10px;
+  border: 1px dotted white;
   display: block;
   position: relative;
   width: 500px;
@@ -43,13 +52,21 @@
 .logform > label > input{
   display: block;
   margin-top: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
 }
 
 .buttonsub{
   background-color: #b8defa;
   display: block!important;
   margin: 0 auto!important;
-
+  transition: 0.2s;
+  &:hover{
+    cursor: pointer;
+    text-decoration: none;
+    opacity: 0.5;
+  }
 }
 
 .login-wrapp > a {
@@ -60,4 +77,5 @@
   display: block;
   padding: 10px;
 }
+
 

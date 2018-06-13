@@ -1,17 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, HostBinding, OnInit} from '@angular/core';
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {UsersService} from "../../shared/services/users.service";
 import {User} from "../../shared/models/user.model";
 import {AuthService} from "../../shared/services/auth.service";
 import {ActivatedRoute, Params, Router} from "@angular/router";
+import {fadeStateTrigger} from "../../shared/animations/fade.animations";
 //import {Message} from "../../shared/models/message.model";
 
 @Component({
   selector: 'pay-login',
+  animations: [fadeStateTrigger],
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
+
+
 })
 export class LoginComponent implements OnInit {
+
+    @HostBinding('@fade')  a = true;
 
   form: FormGroup;
   //message: Message; для сообщ

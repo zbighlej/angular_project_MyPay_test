@@ -1,17 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, HostBinding, OnInit} from '@angular/core';
 import {Form, FormControl, FormGroup, Validators} from "@angular/forms";
 import {UsersService} from "../../shared/services/users.service";
 import {User} from "../../shared/models/user.model";
 import {Router} from "@angular/router";
+import {fadeStateTrigger} from "../../shared/animations/fade.animations";
 
 @Component({
   selector: 'pay-registration',
   templateUrl: './registration.component.html',
+  animations: [fadeStateTrigger],
   styleUrls: ['./registration.component.scss']
 })
 export class RegistrationComponent implements OnInit {
 
-
+  @HostBinding('@fade')  a = true;
   form: FormGroup;
 
 

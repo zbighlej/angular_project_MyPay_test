@@ -45,15 +45,15 @@ arr = [];
               this.electricity = chart.electricity;
 
              this.arr =[{
-              "name": "whateritem",
+              "name": "whater",
               "value": this.whater
             },
               {
-                "name": "gassitem",
+                "name": "gas",
                 "value": this.gass
               },
               {
-                "name": "electricityitem",
+                "name": "electricity",
                 "value": this.electricity
               }];
 

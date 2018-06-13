@@ -1,7 +1,16 @@
 header, body {
   font-family: 'Anton', sans-serif;
 }
+html{
+  height: 100%;
+}
+body{
+  height:1000px;
+  overflow: hidden;
 
+  background: rgb(174,220,238);
+  background: radial-gradient(circle, rgba(174,220,238,0.4654236694677871) 35%, rgba(108,159,182,0.00043767507002800965) 57%);
+}
 
 header{
   background: rgba(147,206,222,1);
@@ -70,7 +79,6 @@ aside{
     margin: 0;
     padding: 0;
     text-align: center;
-
   }
   & a {
     margin-bottom: 20px;
@@ -81,6 +89,7 @@ aside{
     height: 42px;
 
     &:hover{
+      cursor: pointer;
       font-size: 110%;
       transition: 0.2s;
       text-decoration: none;
