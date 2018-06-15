@@ -5,9 +5,8 @@ html{
   height: 100%;
 }
 body{
-  height:1000px;
   overflow: hidden;
-
+  height: 1000px;
   background: rgb(174,220,238);
   background: radial-gradient(circle, rgba(174,220,238,0.4654236694677871) 35%, rgba(108,159,182,0.00043767507002800965) 57%);
 }
@@ -98,7 +97,6 @@ aside{
   }
 }
 main{
-
   display: inline-block;
   width: 75%;
   float: right;
@@ -162,6 +160,24 @@ main{
 @media (min-width: 758px) {
   .small{
     display: none;
+  }
+}
+
+@media (min-width: 1500px) {
+  aside{
+    height: 500px;
+  }
+}
+
+@media (min-width: 1900px) {
+  aside{
+    height: 550px;
+  }
+}
+
+@media (min-width: 2200px) {
+  aside{
+    height: 600px;
   }
 }
 
