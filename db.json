@@ -9,8 +9,14 @@
     {
       "mail": "mikeyork32@gmail.com",
       "pass": "12345678",
-      "id": 2,
+      "id": 2,  
       "name": "Mike"
+    },
+    {
+      "mail": "mail@mail.com",
+      "pass": "12345678",
+      "name": "User",
+      "id": 3
     }
   ],
   "jan2017": {

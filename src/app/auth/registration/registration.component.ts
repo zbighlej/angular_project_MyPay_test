@@ -4,6 +4,7 @@ import {UsersService} from "../../shared/services/users.service";
 import {User} from "../../shared/models/user.model";
 import {Router} from "@angular/router";
 import {fadeStateTrigger} from "../../shared/animations/fade.animations";
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'pay-registration',
@@ -19,9 +20,12 @@ export class RegistrationComponent implements OnInit {
 
   constructor(
     private usersService: UsersService,
-    private router: Router
+    private router: Router,
+    private title:Title
   )
-  {}
+  {
+    title.setTitle('Регистрация');
+  }
 
 ngOnInit()
 {

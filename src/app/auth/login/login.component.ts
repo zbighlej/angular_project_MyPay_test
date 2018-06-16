@@ -5,14 +5,15 @@ import {User} from "../../shared/models/user.model";
 import {AuthService} from "../../shared/services/auth.service";
 import {ActivatedRoute, Params, Router} from "@angular/router";
 import {fadeStateTrigger} from "../../shared/animations/fade.animations";
+import {Title, Meta} from '@angular/platform-browser';
 //import {Message} from "../../shared/models/message.model";
 
 @Component({
-  selector: 'pay-login',
+  selector: 'pay-login',  
   animations: [fadeStateTrigger],
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
-
+  
 
 })
 export class LoginComponent implements OnInit {
@@ -26,8 +27,17 @@ export class LoginComponent implements OnInit {
     private usersService: UsersService,
     private authService: AuthService,
     private router: Router,
-    private route: ActivatedRoute
-  ) { }
+    private route: ActivatedRoute,
+    private title: Title,
+    private meta: Meta
+
+  ) {
+    title.setTitle('Вход в систему'); 
+    meta.addTags([
+      {name: 'keywords', content: 'логин, вход, система'}
+      {name: 'description', content: 'Страница для входа в систему'}
+    ]);
+   }
 
   ngOnInit() {
 
@@ -38,7 +48,7 @@ export class LoginComponent implements OnInit {
           } else if (params['accessDenied']) {
               alert('Для работы вам нужно залогинится!')
           }
-          });
+          });    
 
     //this.message  = new Message('danger', ''); для сообщ
     this.form = new FormGroup({
@@ -51,7 +61,7 @@ export class LoginComponent implements OnInit {
     //   this.message = message;
     //   window.setTimeout(() => {
     //     this.message.text = '';
-    //   }, 5000);
+    //   }, 5000);      
     // }
 
   }
